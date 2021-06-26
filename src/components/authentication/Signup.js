@@ -51,14 +51,14 @@ export default function Signup() {
               <Form.Label>Password Confirmation</Form.Label>
               <Form.Control type="password" ref={passwordConfirmRef} required />
             </Form.Group>
-            <Button disabled={loading} className="w-100" type="submit">
+            <Button disabled={loading} className="w-100 btn-danger" type="submit">
               Sign Up
             </Button>
           </Form>
         </Card.Body>
       </Card>
-      <div className="w-100 text-center mt-2">
-        Already have an account? <Link to="/login">Log In</Link>
+      <div className="w-100 text-center mt-2 text-white">
+        Already have an account? <Link to="/login" style={{color: "red"}}>Log In</Link>
       </div>
     </CenteredContainer>
   )

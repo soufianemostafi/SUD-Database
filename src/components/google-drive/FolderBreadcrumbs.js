@@ -18,7 +18,7 @@ export default function FolderBreadcrumbs({ currentFolder }) {
           linkAs={Link}
           linkProps={{
             to: {
-              pathname: folder.id ? `/folder/${folder.id}` : "/",
+              pathname: folder.id ? `/folder/${folder.id}` : "/Dashboard",
               state: { folder: { ...folder, path: path.slice(1, index) } },
             },
           }}

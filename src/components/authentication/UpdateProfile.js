@@ -74,14 +74,14 @@ export default function UpdateProfile() {
                 placeholder="Leave blank to keep the same"
               />
             </Form.Group>
-            <Button disabled={loading} className="w-100" type="submit">
+            <Button disabled={loading} className="w-100 btn-danger" type="submit">
               Update
             </Button>
           </Form>
         </Card.Body>
       </Card>
       <div className="w-100 text-center mt-2">
-        <Link to="/user">Cancel</Link>
+        <Link to="/user" style={{color: "red"}}>Cancel</Link>
       </div>
     </CenteredContainer>
   )

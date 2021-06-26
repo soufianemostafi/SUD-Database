@@ -1,6 +1,8 @@
 import React from 'react'
 import Navbar from './Navbar'
 import CenteredContainer from '../authentication/CenteredContainer'
+
+import { Container } from "react-bootstrap"
 function Home() {
     return (
         <div style={{
@@ -10,9 +12,11 @@ function Home() {
             backgroundRepeat: 'no-repeat'
         }}>
             <Navbar />
-            <CenteredContainer>
+            <Container className="d-flex align-items-center justify-content-center"style={{ minHeight: "100vh" }}>
+            <div className="w-100" style={{ maxWidth: "400px" }}>
                 <p className="h2 font-weight-bold text-white">With SUD-Database, you can upload and share your files freely and securily at the cheapest prices in the market.</p>
-            </CenteredContainer>
+            </div>
+            </Container>
         </div>
     )
 }

@@ -11,20 +11,20 @@ export default function NavbarComponent() {
   }
   const { currentUser, logout } = useAuth()
   return (
-    <Navbar bg="light" expand="sm">
-      <Navbar.Brand as={Link} to="/Dashboard">
+    <Navbar bg="dark" expand="sm">
+      <Navbar.Brand as={Link} style={{color: "red"}} to="/Dashboard">
         SUD-Database
       </Navbar.Brand>
       <Nav>
-        {currentUser ? (<Nav><Nav.Link as={Link} to="/user">
+        {currentUser ? (<Nav><Nav.Link style={{color: "red"}} as={Link} to="/user">
           Profile
         </Nav.Link>
-          <Button style={{ color: "grey" }} variant="link" onClick={handleLogout}>
+          <Button style={{ color: "red" }} variant="link" onClick={handleLogout}>
             Log Out
-          </Button> </Nav>) : (<Nav><Nav.Link as={Link} to="/login">
+          </Button> </Nav>) : (<Nav><Nav.Link style={{color: "red"}} as={Link} to="/login">
             Login
           </Nav.Link>
-            <Nav.Link as={Link} to="/signup">
+            <Nav.Link as={Link} style={{color: "red"}} to="/signup">
               Sign up
             </Nav.Link></Nav>
         )}

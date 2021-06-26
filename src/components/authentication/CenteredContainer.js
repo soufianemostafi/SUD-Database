@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap"
 export default function CenteredContainer({ children }) {
   return (
     <Container
-      className="d-flex align-items-center justify-content-center"
+      className="d-flex align-items-center justify-content-center bg-dark"
       style={{ minHeight: "100vh" }}
     >
       <div className="w-100" style={{ maxWidth: "400px" }}>

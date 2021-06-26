@@ -39,17 +39,17 @@ export default function ForgotPassword() {
               <Form.Label>Email</Form.Label>
               <Form.Control type="email" ref={emailRef} required />
             </Form.Group>
-            <Button disabled={loading} className="w-100" type="submit">
+            <Button disabled={loading} className="w-100 btn-danger" type="submit">
               Reset Password
             </Button>
           </Form>
-          <div className="w-100 text-center mt-3">
-            <Link to="/login">Login</Link>
+          <div className="w-100 text-center mt-3 ">
+            <Link style={{color: "red"}} to="/login">Login</Link>
           </div>
         </Card.Body>
       </Card>
-      <div className="w-100 text-center mt-2">
-        Need an account? <Link to="/signup">Sign Up</Link>
+      <div className="w-100 text-center text-white">
+        Need an account? <Link style={{color: "red"}} to="/signup">Sign Up</Link>
       </div>
     </CenteredContainer>
   )

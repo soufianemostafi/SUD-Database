@@ -44,17 +44,17 @@ export default function Login() {
               <Form.Label>Password</Form.Label>
               <Form.Control type="password" ref={passwordRef} required />
             </Form.Group>
-            <Button disabled={loading} className="w-100" type="submit">
+            <Button disabled={loading} className="w-100 btn-danger" type="submit">
               Log In
             </Button>
           </Form>
           <div className="w-100 text-center mt-3">
-            <Link to="/forgot-password">Forgot Password?</Link>
+            <Link to="/forgot-password" style={{color: "red"}}>Forgot Password?</Link>
           </div>
         </Card.Body>
       </Card>
-      <div className="w-100 text-center mt-2">
-        Need an account? <Link to="/signup">Sign Up</Link>
+      <div className="w-100 text-center mt-2 text-white">
+        Need an account? <Link to="/signup" style={{color: "red"}}>Sign Up</Link>
       </div>
     </CenteredContainer>
   )

@@ -29,7 +29,7 @@ function Socialnsc() {
       .auth()
       .signInWithPopup(Facebookprovider)
       .then((auth) => {
-        history.push("/Dashboard");
+        history.replace("/Dashboard");
       })
       .catch((error) => {
         alert(error.message);
